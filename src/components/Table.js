@@ -5,8 +5,11 @@ function Table(props) {
       <table>
         <thead>
           <tr>
-            <th>image</th>
+            <th>Image</th>
             <th onClick={props.handleSort}>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>DOB</th>
           </tr>
         </thead>
         <tbody>
@@ -16,6 +19,10 @@ function Table(props) {
                 <td>
                   <img src={employee.image} alt="employee" />
                 </td>
+                <td>{employee.name}</td>
+                <td>{employee.phone}</td>
+                <td>{employee.email}</td>
+                <td>{employee.DOB}</td>
               </tr>
             );
           })}
